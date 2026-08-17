@@ -9,13 +9,14 @@
         ":skipStatusChecks",
         ":pinVersions"
     ],
+    "lockFileMaintenance": {
+        "enabled": true,
+	"automerge": true,
+        "schedule": ["at any time"]
+    },
     "dependencyDashboardOSVVulnerabilitySummary": "all",
     "osvVulnerabilityAlerts": true,
     "vulnerabilityAlerts": {
         "enabled": true
-    },
-    "lockFileMaintenance": {
-        "enabled": true,
-        "schedule": ["at any time"]
     }
 }
