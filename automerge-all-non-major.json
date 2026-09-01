@@ -24,7 +24,7 @@
             "customType": "regex",
             "datasourceTemplate": "docker",
             "depNameTemplate": "ghcr.io/{{{depName}}}",
-            "fileMatch": ["\\.ya?ml$"],
+            "managerFilePatterns": ["**/*.yaml", "**/*.yml"],
             "matchStrings": [
                 "^[ \\t]*#[ \\t]*renovate:[ \\t]*repo=(?<depName>[^\\s]+)[ \\t]*\\r?\\n[ \\t]*[\\w\\-]+:[ \\t]*\\'?(?<currentValue>[^\\'\"\\s]+)\\'?"
             ]
