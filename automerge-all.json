@@ -22,11 +22,12 @@
     "customManagers": [
         {
             "customType": "regex",
-            "datasourceTemplate": "github-releases",
-            "fileMatch": ["\\.ya?ml$"],
+            "managerFilePatterns": ["**/*.yaml", "**/*.yml"],
             "matchStrings": [
-                "^[ \\t]*#[ \\t]*renovate:[ \\t]*repo=(?<depName>[^\\s]+)[ \\t]*\\r?\\n[ \\t]*[\\w\\-]+:[ \\t]*\\'?(?<currentValue>[^\\'\"\\s]+)\\'?"
-            ]
+                "\\s*# renovate: repo=(?<depName>[^\\s]+)\\n\\s*[^:]+:\\s*(?<currentValue>[^\\s]+)"
+            ],
+            "datasourceTemplate": "docker",
+            "registryUrlTemplate": "https://ghcr.io"
         }
     ]
 }
