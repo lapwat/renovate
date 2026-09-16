@@ -10,10 +10,6 @@
         ":skipStatusChecks",
         ":pinVersions"
     ],
-    "lockFileMaintenance": {
-        "enabled": true,
-        "schedule": ["at any time"]
-    },
     "dependencyDashboardOSVVulnerabilitySummary": "all",
     "osvVulnerabilityAlerts": true,
     "vulnerabilityAlerts": {
